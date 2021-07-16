@@ -1,5 +1,6 @@
 package com.project.person.dto.request;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -33,7 +34,8 @@ public class PersonDTO {
 	@NotEmpty
 	@CPF
 	private String cpf;
-	
+
+	@NotEmpty
 	private String birthDate;
 
 	@Valid

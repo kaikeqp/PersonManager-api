@@ -1,5 +1,9 @@
 package com.project.person.models;
 
+
+
+
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -28,7 +32,8 @@ public class Person {
 	
 	@Column(nullable = false, unique = true)
 	private String cpf;
-	
+
+
 	private LocalDate birthDate;
 	
 	@OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
@@ -66,13 +71,13 @@ public class Person {
 //		this.cpf = cpf;
 //	}
 //
-//	public LocalDate getBirthDate() {
-//		return birthDate;
-//	}
-//
-//	public void setBirthDate(LocalDate birthDate) {
-//		this.birthDate = birthDate;
-//	}
+	public LocalDate getBirthDate() {
+		return birthDate;
+	}
+
+	public void setBirthDate(LocalDate birthDate) {
+		this.birthDate = birthDate;
+	}
 //
 //	public List<Phone> getPhones() {
 //		return phones;

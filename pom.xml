@@ -66,6 +66,12 @@
 			<version>1.4.2.Final</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+		</dependency>
+
 		<!--		<dependency>-->
 <!--            <groupId>org.mapstruct</groupId>-->
 <!--            <artifactId>mapstruct</artifactId>-->
@@ -90,16 +96,16 @@
 					<target>${java.version}</target> <!-- depending on your project -->
 					<annotationProcessorPaths>
 						<path>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+							<version>1.18.10</version>
+						</path>
+						<path>
 							<groupId>org.mapstruct</groupId>
 							<artifactId>mapstruct-processor</artifactId>
 							<version>1.4.2.Final</version>
 						</path>
 						<!-- other annotation processors -->
-						<path>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-							<version>${lombok.version}</version>
-						</path>
 					</annotationProcessorPaths>
 				</configuration>
 			</plugin>
