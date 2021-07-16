@@ -16,7 +16,6 @@ import java.util.stream.Collectors;
 import javax.validation.Valid;
 
 @Service
-//@AllArgsConstructor(onConstructor = @__(@Autowired))
 public class PersonService {
 
 	private PersonRepository personRep;

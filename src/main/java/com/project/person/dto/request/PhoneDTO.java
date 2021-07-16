@@ -1,9 +1,5 @@
 package com.project.person.dto.request;
 
-
-
-
-
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.validation.constraints.NotEmpty;
